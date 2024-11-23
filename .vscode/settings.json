@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "optional": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp"
+    }
+}
