@@ -17,12 +17,12 @@
 #define DHTTYPE DHT11 // Versão do sensor DHT
 
 //Configurações da Rede WiFi
-const char *networkSSID = "FIORINI";
-const char *networkPwd = "0";
+const char *networkSSID = "AndroidAP55BA";
+const char *networkPwd = "xzjm7323";
 
 //Configurações do broker
-const char *mqttBroker = "192.168.1.13";
-const char *mqttTopic = "lan";
+const char *mqttBroker = "test.mosquitto.org"; //IP do broker MQTT
+const char *mqttTopic = ""; //Topico
 const int mqttPort = 1883;
 
 DHT          dht(DHTPIN, DHTTYPE);
@@ -155,7 +155,7 @@ const char *getHumidity()
 
 void pubTemperature()
 {
-  mqttTopic = "univali/iot/temperatura";
+  mqttTopic = "graduacao/iot/grupo_1/temperatura";
 
   const char *response = getTemperature();
 
@@ -166,7 +166,7 @@ void pubTemperature()
 
 void pubHumidity()
 {
-  mqttTopic = "univali/iot/umidade";
+  mqttTopic = "graduacao/iot/grupo_1/umidade";
 
   const char *response = getHumidity();
 
