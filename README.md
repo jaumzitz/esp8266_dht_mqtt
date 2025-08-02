@@ -1,4 +1,4 @@
-## (EN) Temperature and Humidity meter | Medidor de Temperatura e Umidade
+## Temperature and Humidity meter | Medidor de Temperatura e Umidade
 
 _EN:_ This IoT project collects umidity and temperature data using a DHT sensor coneccted to a ESP826 microprocessor.
 _PT:_ Esse projeto de IoT (Internet das Coisas ) coleta dados de **umidade e temperatura** usando um **sensor DHT conectado a um microprocessador ESP8266**.
